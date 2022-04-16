@@ -169,7 +169,7 @@ game.onUpdate(function () {
         }
     }
 })
-forever(function () {
+game.onUpdate(function () {
     if (Hero.tileKindAt(TileDirection.Center, sprites.dungeon.stairNorth) || Hero.tileKindAt(TileDirection.Bottom, sprites.dungeon.stairNorth)) {
         Hero.ay = 0
         Hero.vy = 0
